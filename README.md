@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Count down until payday 00:00:00
 
 ## Available Scripts
 
