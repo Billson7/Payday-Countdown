@@ -1,10 +1,4 @@
-import React from "react";
-
 const Title = () => {
-  const today = new Date();
-  const currentMonth = String(today.getMonth() + 1).padStart(2, "0");
-  console.log(currentMonth);
-
   const months = [
     "January",
     "February",
