@@ -7,7 +7,5 @@
 
 body {
   font-family: "Nirmala UI", sans-serif;
-  background: #801d1d;
-  background: -webkit-linear-gradient(to right, #a55858, #801d1d);
-  background: linear-gradient(to right, #a55858, #801d1d);
+  background-color: grey;
 }
