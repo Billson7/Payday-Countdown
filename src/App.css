@@ -1,47 +1,42 @@
-main {
+.page-section {
   display: flex;
-  flex-direction: column;
+  margin: auto;
+  padding-top: 3rem !important;
   justify-content: space-evenly;
-  align-items: center;
-  height: 100vh;
+  margin: auto;
 }
-
 .countdown-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 3rem !important;
+  background: #007991;
+  background: -webkit-linear-gradient(to right, #007991, #78ffd6);
+  background: linear-gradient(to right, #007991, #78ffd6);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 1rem !important;
+  box-sizing: border-box;
+  text-align: center !important;
+  margin-bottom: 3rem !important;
+  width: 700px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  text-transform: uppercase !important;
+  margin-left: 0.8rem;
 }
 
 .timer {
-  flex-direction: column;
-  margin: 250px 20px 20px 20px;
-  font-size: 30px;
   color: white;
-  text-align: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.5rem !important;
+}
+
+.timer span {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  margin-left: 0.8rem;
 }
 
 #header {
-  margin: 20px 0 0 0;
   font-size: 25px;
-  display: flex;
   color: white;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    flex-direction: row;
-  }
-  #header {
-    margin: 500px 20px 20px 0;
-    font-size: 100px;
-    text-align: center;
-  }
-  .timer {
-    margin: 20px 20px 20px 20px;
-    flex-direction: row;
-    color: white;
-    font-size: 80px;
-  }
 }
