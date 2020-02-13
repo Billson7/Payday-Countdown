@@ -27,7 +27,7 @@ const App = () => {
     }, 1000);
   });
   const timerComponents = [];
-  console.log(timerComponents);
+
   Object.keys(timeLeft).forEach(interval => {
     if (!timeLeft[interval]) {
       return;
@@ -38,7 +38,6 @@ const App = () => {
         {timeLeft[interval]} {interval}{" "}
       </span>
     );
-    console.log();
   });
 
   const config = {
