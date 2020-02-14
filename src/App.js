@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Title from "./components/heading";
 import "./App.css";
 import Confetti from "react-dom-confetti";
+import heading from "./components/heading";
 
 const App = () => {
+  const { month, payDate } = heading();
   const calculateTimeLeft = () => {
-    const difference = +new Date("2020-02-28") - +new Date();
+    const difference = +new Date(payDate) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -16,7 +17,6 @@ const App = () => {
         seconds: Math.floor((difference / 1000) % 60)
       };
     }
-    console.log(timeLeft);
     return timeLeft;
   };
 
@@ -56,9 +56,7 @@ const App = () => {
   return (
     <div className="page-section">
       <div className="countdown-page">
-        <h1 id="header">
-          <Title /> Payday Countdown
-        </h1>
+        <h1 id="header">{month} Payday Countdown</h1>
         <div className="timer">
           {timerComponents.length ? (
             timerComponents
