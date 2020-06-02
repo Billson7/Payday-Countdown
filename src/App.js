@@ -56,7 +56,8 @@ const App = () => {
   return (
     <div className="page-section">
       <div className="countdown-page">
-        <h1 id="header">{month} Payday Countdown</h1>
+        <h1 id="header">This is a countdown to your</h1>
+        <h1 id="header">{month} Payday!</h1>
         <div className="timer">
           {timerComponents.length ? (
             timerComponents
