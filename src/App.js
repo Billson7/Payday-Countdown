@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Confetti from "react-dom-confetti";
 import heading from "./components/heading";
+import HeadingGreeting from "./components/heading-greeting";
 
 const App = () => {
   const { month, payDate } = heading();
@@ -14,7 +14,7 @@ const App = () => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hrs: Math.floor((difference / (1000 * 60 * 60)) % 24),
         mins: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
     return timeLeft;
@@ -28,7 +28,7 @@ const App = () => {
   });
   const timerComponents = [];
 
-  Object.keys(timeLeft).forEach(interval => {
+  Object.keys(timeLeft).forEach((interval) => {
     if (!timeLeft[interval]) {
       return;
     }
@@ -40,32 +40,13 @@ const App = () => {
     );
   });
 
-  const config = {
-    angle: "360",
-    spread: "360",
-    startVelocity: "100",
-    elementCount: "200",
-    dragFriction: "0.11",
-    duration: "10000",
-    stagger: "20",
-    width: "20px",
-    height: "15px",
-    colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
-  };
-
   return (
     <div className="page-section">
       <div className="countdown-page">
-        <h1 id="header">{month} Payday Countdown</h1>
+        <h1 id="header">{HeadingGreeting()}, </h1>
+        <h1 id="header">this is a countdown to your{month} Payday!</h1>
         <div className="timer">
-          {timerComponents.length ? (
-            timerComponents
-          ) : (
-            <span>
-              <Confetti active={true} config={config} />
-              Payday!
-            </span>
-          )}
+          {timerComponents.length ? timerComponents : <span>Payday!</span>}
         </div>
       </div>
     </div>
