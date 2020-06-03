@@ -43,11 +43,12 @@ const App = () => {
   return (
     <div className="page-section">
       <div className="countdown-page">
-        <h1 id="header">{HeadingGreeting()}, </h1>
-        <h1 id="header">this is a countdown to your {month} Payday!</h1>
         <div className="timer">
           {timerComponents.length ? timerComponents : <span>Payday!</span>}
         </div>
+        <h1 id="header">
+          {HeadingGreeting()}, this is a countdown to your {month} Payday!
+        </h1>
       </div>
     </div>
   );
