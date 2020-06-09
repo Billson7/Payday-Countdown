@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Heading from "./components/heading";
+import Heading from "./components/Heading";
 import HeadingGreeting from "./components/HeadingGreeting";
 import Timer from "./components/Timer";
 const App = () => {

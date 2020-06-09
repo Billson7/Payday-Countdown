@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Heading from "./heading";
+import Heading from "./Heading";
 
 const Timer = () => {
   const { payDate } = Heading();
