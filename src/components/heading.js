@@ -1,4 +1,4 @@
-const heading = () => {
+const Heading = () => {
   const months = [
     { month: "January", payDate: "01/31/2020", time: "09:00:00" },
     { month: "February", payDate: "02/28/2020", time: "09:00:00" },
@@ -11,10 +11,10 @@ const heading = () => {
     { month: "September", payDate: "09/30/2020", time: "09:00:00" },
     { month: "October", payDate: "10/30/2020", time: "09:00:00" },
     { month: "November", payDate: "11/30/2020", time: "09:00:00" },
-    { month: "Decemeber", payDate: "12/24/2020", time: "09:00:00" }
+    { month: "Decemeber", payDate: "12/24/2020", time: "09:00:00" },
   ];
   const d = new Date();
   return months[d.getMonth()];
 };
 
-export default heading;
+export default Heading;
