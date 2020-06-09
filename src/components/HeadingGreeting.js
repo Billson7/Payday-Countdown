@@ -9,7 +9,6 @@ const HeadingGreeting = () => {
   } else {
     dayState = "Good Evening";
   }
-  console.log(dayState);
   return dayState;
 };
 export default HeadingGreeting;
