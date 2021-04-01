@@ -4,15 +4,16 @@ import Heading from "./components/Heading";
 import HeadingGreeting from "./components/HeadingGreeting";
 import Timer from "./components/Timer";
 const App = () => {
-  const { month } = Heading();
+  const { month, payDate } = Heading();
 
   return (
-    <div className="page-section">
+    <div className="container my-40 ">
       <div className="countdown-page">
         <Timer />
         <h1 id="header">
           {HeadingGreeting()}, this is a countdown to your {month} Payday!
         </h1>
+        <p className="mt-2">{payDate}</p>
       </div>
     </div>
   );
