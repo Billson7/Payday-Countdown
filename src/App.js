@@ -13,7 +13,7 @@ const App = () => {
         <h1 id="header">
           {HeadingGreeting()}, this is a countdown to your {month} Payday!
         </h1>
-        <p className="mt-2">{payDate}</p>
+        <p className="mt-2 text-gray-300">{payDate}</p>
       </div>
     </div>
   );

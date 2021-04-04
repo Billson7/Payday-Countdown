@@ -7,12 +7,7 @@
   box-sizing: border-box;
   text-align: center;
   padding: 3rem;
-  width: 700px;
-  /*background: #007991;*/
-  /*background: -webkit-linear-gradient(to right, #007991, #78ffd6);*/
-  /*background: linear-gradient(to right, #007991, #78ffd6);*/
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
 .timer {
@@ -23,9 +18,8 @@
 }
 
 .timer span {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  font-size: 3.2rem;
-  margin-left: 0.8rem;
+  font-size: 8rem;
+  margin-left: 0.4rem;
   font-family: 'Roboto', sans-serif;
 
 }
