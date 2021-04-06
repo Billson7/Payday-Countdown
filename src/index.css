@@ -7,5 +7,10 @@
 
 body {
   font-family: "Nirmala UI", sans-serif;
-  background-color: grey;
+  background-color: white;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

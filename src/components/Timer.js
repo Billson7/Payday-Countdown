@@ -9,10 +9,10 @@ const Timer = () => {
 
     if (difference > 0) {
       timeLeft = {
-        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        Hrs: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        Mins: Math.floor((difference / 1000 / 60) % 60),
-        Seconds: Math.floor((difference / 1000) % 60),
+        day: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hour: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minute: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
     return timeLeft;
@@ -32,8 +32,8 @@ const Timer = () => {
     }
 
     timerComponents.push(
-      <span id="time" key={interval}>
-        {timeLeft[interval]} {interval}{" "}
+      <span className='bg-black p-3 rounded-lg text-white font-extralight' id="time" key={interval}>
+        {timeLeft[interval] < 10 ? "0" + timeLeft[interval] : timeLeft[interval]}
       </span>
     );
   });
