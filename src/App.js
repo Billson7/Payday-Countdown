@@ -7,7 +7,7 @@ const App = () => {
   const { month, payDate } = Heading();
 
   return (
-    <div className="container my-40 ">
+    <div className="container my-40">
       <div className="countdown-page">
         <Timer />
         <h1 id="header">
