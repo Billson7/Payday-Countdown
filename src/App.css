@@ -26,9 +26,11 @@
 }
 
 #header {
+  margin: auto;
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  max-width: 95%;
 }
 
 @media screen and (min-width: 580px) {
@@ -37,5 +39,8 @@
   }
   .countdown-page {
     padding: 3rem;
+  }
+  #header {
+    max-width: 100%;
   }
 }
