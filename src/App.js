@@ -7,15 +7,17 @@ const App = () => {
   const { month, payDate } = Heading();
 
   return (
-    <div className="container my-40">
-      <div className="countdown-page">
-        <Timer />
-        <h1 id="header">
-          {HeadingGreeting()}, this is a countdown to your {month} Payday!
+    <body className='min-h-screen bg-white dark:bg-gray-900 '>
+      <div className="container bg-white dark:bg-gray-900">
+        <div className="countdown-page">
+          <Timer />
+          <h1 className='text-black dark:text-white' id="header">
+            {HeadingGreeting()}, this is a countdown to your {month} Payday!
         </h1>
-        <p className="mt-2 text-gray-300">{payDate}</p>
+          <p className="mt-2 text-gray-300 dark:text-white">{payDate}</p>
+        </div>
       </div>
-    </div>
+    </body>
   );
 };
 export default App;

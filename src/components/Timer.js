@@ -32,7 +32,7 @@ const Timer = () => {
     }
 
     timerComponents.push(
-      <span className='bg-black p-3 rounded-lg text-white font-extralight' id="time" key={interval}>
+      <span className='bg-black dark:bg-white p-3 rounded-lg text-white dark:text-black font-extralight' id="time" key={interval}>
         {timeLeft[interval] < 10 ? "0" + timeLeft[interval] : timeLeft[interval]}
       </span>
     );
