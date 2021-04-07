@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <body className='min-h-screen bg-white dark:bg-gray-900 '>
-      <div className="container bg-white dark:bg-gray-900">
+      <div className="container bg-white dark:bg-gray-900 pt-40 md:pt-0">
         <div className="countdown-page">
           <Timer />
           <h1 className='text-black dark:text-white' id="header">
