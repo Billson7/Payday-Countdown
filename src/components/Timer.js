@@ -36,8 +36,8 @@ const Timer = () => {
     let dayZeroCheck = day !== 0 ? day : "00"
     dayZeroCheck = day < 10 ? "0" + day : day
 
-    let joiner = ":"
-    let timer = dayZeroCheck += joiner += hourZeroCheck += joiner += minuteZeroCheck += joiner += secondsZeroCheck
+    let seperator = ":"
+    let timer = dayZeroCheck += seperator += hourZeroCheck += seperator += minuteZeroCheck += seperator += secondsZeroCheck
     console.log("TIMER", timer)
     return timer
 
@@ -64,7 +64,7 @@ const Timer = () => {
   });
 
   return (
-    <div className="timer">
+    <div className="timer" data-testid="timer">
       <span className='bg-black dark:bg-white p-3 rounded-lg text-white dark:text-black font-extralight'>
         {timerFormatter()}
       </span >
