@@ -37,7 +37,7 @@ const Timer = () => {
     dayZeroCheck = day < 10 ? "0" + day : day
 
     let seperator = ":"
-    let timer = dayZeroCheck += seperator += hourZeroCheck += seperator += minuteZeroCheck += seperator += secondsZeroCheck
+    const timer = dayZeroCheck += seperator += hourZeroCheck += seperator += minuteZeroCheck += seperator += secondsZeroCheck
     console.log("TIMER", timer)
     return timer
 
