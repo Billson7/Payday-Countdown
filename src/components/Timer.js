@@ -38,7 +38,8 @@ const Timer = () => {
 
     let seperator = ":";
     const timer = (dayZeroCheck += seperator += hourZeroCheck += seperator += minuteZeroCheck += seperator += secondsZeroCheck);
-    return timer;
+
+    return timer.includes("undefined") ? "Payday!" : timer;
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -68,7 +69,6 @@ const Timer = () => {
       <span className="bg-black dark:bg-white p-3 rounded-lg text-white dark:text-black font-extralight">
         {timerFormatter()}
       </span>
-      {timerComponents.length ? timerComponents : <span>Payday!</span>}
     </div>
   );
 };
