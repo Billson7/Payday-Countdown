@@ -7,8 +7,9 @@ import moment from "moment";
 
 const App = () => {
   const { month, payDate } = Heading();
-  const todaysDate = moment().format("L");
+  const formattedDate = moment(payDate).format("DD/MM/YYYY");
   const dateChecker = () => {
+    const todaysDate = moment().format("L");
     return todaysDate === payDate ? "" : "a countdown to";
   };
   return (
@@ -19,7 +20,7 @@ const App = () => {
           <h1 className="text-black dark:text-white" id="header">
             {HeadingGreeting()}, this is {dateChecker()} your {month} Payday!
           </h1>
-          <p className="mt-2 text-gray-300 dark:text-white">{payDate}</p>
+          <p className="mt-2 text-gray-300 dark:text-white">{formattedDate}</p>
         </div>
       </div>
     </body>
