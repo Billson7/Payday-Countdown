@@ -20,7 +20,9 @@ const App = () => {
           <h1 className="text-black dark:text-white" id="header">
             {HeadingGreeting()}, this is {dateChecker()} your {month} Payday!
           </h1>
-          <p className="mt-2 text-gray-300 dark:text-white">{formattedDate}</p>
+          <p className="mt-2 text-gray-300 dark:text-gray-500">
+            {formattedDate}
+          </p>
         </div>
       </div>
     </body>
