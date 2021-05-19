@@ -37,8 +37,15 @@ const Timer = () => {
     dayZeroCheck = day < 10 ? "0" + day : day;
 
     let seperator = ":";
-    const timer = (dayZeroCheck += seperator += hourZeroCheck += seperator += minuteZeroCheck += seperator += secondsZeroCheck);
-
+    const timer =
+      (dayZeroCheck +=
+      seperator +=
+      hourZeroCheck +=
+      seperator +=
+      minuteZeroCheck +=
+      seperator +=
+        secondsZeroCheck);
+    // TODO: need to display day hours minutes seconds as a subtitle - same style as the displayed date
     return timer.includes("undefined") ? "Payday!" : timer;
   };
 
