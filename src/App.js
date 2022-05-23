@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Heading from "./components/Heading";
-import HeadingGreeting from "./components/HeadingGreeting";
+import { HeadingGreeting } from "./components/HeadingGreeting";
 import Timer from "./components/Timer";
 import moment from "moment";
 

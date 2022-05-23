@@ -1,4 +1,4 @@
-const HeadingGreeting = () => {
+export const HeadingGreeting = () => {
   const today = new Date();
   const currentHour = today.getHours();
   let dayState;
@@ -11,4 +11,3 @@ const HeadingGreeting = () => {
   }
   return dayState;
 };
-export default HeadingGreeting;
