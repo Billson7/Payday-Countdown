@@ -22,9 +22,9 @@ export const Timer = () => {
     let hour = timeLeft.hour;
     let minute = timeLeft.minute;
     let seconds = timeLeft.seconds;
-    // Checks if seconds is equal ro 0 and replaces it with double zero
+    // Checks if seconds is equal to 0 and replaces it with double zero
     let secondsZeroCheck = seconds !== 0 ? seconds : "00";
-    // adds a starting zero if the number drops below 10 so it show 09, 08 etc
+    // adds a starting zero if the number drops below 10, so it shows 09, 08 etc
     secondsZeroCheck = seconds < 10 ? "0" + seconds : seconds;
 
     let minuteZeroCheck = minute !== 0 ? minute : "00";
