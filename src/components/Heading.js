@@ -1,4 +1,4 @@
-const Heading = () => {
+export const Heading = () => {
  const months = [
     { month: "January", payDate: "01/27/2022", time: "00:00:00" },
     { month: "February", payDate: "02/25/2022", time: "00:00:00" },
@@ -16,5 +16,3 @@ const Heading = () => {
   const d = new Date();
   return months[d.getMonth()];
 };
-
-export default Heading;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Heading from "./Heading";
+import { Heading } from "./Heading";
 
-const Timer = () => {
+export const Timer = () => {
   const { payDate } = Heading();
   const calculateTimeLeft = () => {
     const difference = +new Date(payDate) - +new Date();
@@ -72,4 +72,3 @@ const Timer = () => {
     </div>
   );
 };
-export default Timer;
