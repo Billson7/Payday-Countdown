@@ -10,7 +10,7 @@ export const Heading = () => {
     { month: "August", payDate: "08/26/2022", time: "00:00:00" },
     { month: "September", payDate: "09/27/2022", time: "00:00:00" },
     { month: "October", payDate: "10/27/2022", time: "00:00:00" },
-    { month: "November", payDate: "11/24/2022", time: "00:00:00" },
+    { month: "November", payDate: "11/25/2022", time: "00:00:00" },
     { month: "December", payDate: "12/22/2022", time: "00:00:00" }
   ];
   const d = new Date();
