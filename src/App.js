@@ -4,11 +4,11 @@ import { Heading } from "./components/Heading";
 import { HeadingGreeting } from "./components/HeadingGreeting";
 import { Timer } from "./components/Timer";
 import { getPayDateChecker } from "./utils/get-pay-date-checker";
-import moment from "moment";
+import { format } from "date-fns";
 
 const App = () => {
   const { month, payDate } = Heading();
-  const formattedDate = moment(payDate).format("dddd DD MMM").toUpperCase();
+  const formattedDate = format(new Date(payDate), "EEEE dd MMM").toUpperCase();
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 ">
