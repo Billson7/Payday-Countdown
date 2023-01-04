@@ -13,7 +13,7 @@ const App = () => {
     return todaysDate === payDate ? "" : "a countdown to";
   };
   return (
-    <body className="min-h-screen bg-white dark:bg-gray-900 ">
+    <div className="min-h-screen bg-white dark:bg-gray-900 ">
       <div className="container bg-white dark:bg-gray-900 pt-40 md:pt-0">
         <div className="countdown-page">
           <h1 className=" text-gray-300 dark:text-gray-500 ">
@@ -25,7 +25,7 @@ const App = () => {
           </h1>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 export default App;
