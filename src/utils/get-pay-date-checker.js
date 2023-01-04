@@ -1,6 +1,6 @@
-import moment from "moment";
+import { format } from "date-fns";
 
-const todaysDate = moment().format("L");
+const todaysDate = format(new Date(), "ee/MM/yyyy");
 
 export const getPayDateChecker = (payDate) =>
   todaysDate !== payDate ? "a countdown to" : "";
