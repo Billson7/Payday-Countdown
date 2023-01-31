@@ -3,6 +3,8 @@ import { Heading } from "./Heading";
 
 export const Timer = () => {
   const { payDate } = Heading();
+
+  // probs refactor to a utils file - same as timerFormatter
   const calculateTimeLeft = () => {
     const difference = +new Date(payDate) - +new Date();
     let timeLeft = {};
@@ -15,34 +17,39 @@ export const Timer = () => {
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
+
     return timeLeft;
   };
+
+  // TODO: Refactor this function as it can 100% can be done with a dep like date-fns
   const timerFormatter = () => {
     let day = timeLeft.day;
     let hour = timeLeft.hour;
     let minute = timeLeft.minute;
     let seconds = timeLeft.seconds;
-    // Checks if seconds is equal to 0 and replaces it with double zero
+    let seperator = ":";
+    // Checks if seconds are equal to 0 and replaces it with double zero
     let secondsZeroCheck = seconds !== 0 ? seconds : "00";
+    let minuteZeroCheck = minute !== 0 ? minute : "00";
+    let hourZeroCheck = hour !== 0 ? hour : "00";
+    let dayZeroCheck = day !== 0 ? day : "00";
+    
     // adds a starting zero if the number drops below 10, so it shows 09, 08 etc
     secondsZeroCheck = seconds < 10 ? "0" + seconds : seconds;
 
-    let minuteZeroCheck = minute !== 0 ? minute : "00";
     minuteZeroCheck = minute < 10 ? "0" + minute : minute;
 
-    let hourZeroCheck = hour !== 0 ? hour : "00";
     hourZeroCheck = hour < 10 ? "0" + hour : hour;
 
-    let dayZeroCheck = day !== 0 ? day : "00";
     dayZeroCheck = day < 10 ? "0" + day : day;
 
-    let seperator = ":";
     const timer = (dayZeroCheck += seperator += hourZeroCheck += seperator += minuteZeroCheck += seperator += secondsZeroCheck);
 
     return timer.includes("undefined") ? "Payday!" : timer;
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
   useEffect(() => {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
