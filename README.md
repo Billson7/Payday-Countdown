@@ -1,4 +1,4 @@
-# Countdown until payday!
+# Countdown until payday!
 
 Counts down until your pay day of that month
 It displays 'Payday!' on your actual payday
