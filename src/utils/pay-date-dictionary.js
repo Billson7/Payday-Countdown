@@ -11,6 +11,6 @@ export const payDateDictionary = [
   { month: "August", payDate: `08/25/${currentYear}`, time: "00:00:00" },
   { month: "September", payDate: `09/25/${currentYear}`, time: "00:00:00" },
   { month: "October", payDate: `10/27/${currentYear}`, time: "00:00:00" },
-  { month: "November", payDate: `11/30/${currentYear}`, time: "00:00:00" },
+  { month: "November", payDate: `11/27/${currentYear}`, time: "00:00:00" },
   { month: "Christmas", payDate: `12/22/${currentYear}`, time: "00:00:00" },
 ];
