@@ -1,7 +1,7 @@
 const currentYear = new Date().getFullYear();
 
 export const payDateDictionary = [
-  { month: "January", payDate: `01/29/${currentYear}`, time: "00:00:00" },
+  { month: "January", payDate: `01/26/${currentYear}`, time: "00:00:00" },
   { month: "February", payDate: `02/27/${currentYear}`, time: "00:00:00" },
   { month: "March", payDate: `03/27/${currentYear}`, time: "00:00:00" },
   { month: "April", payDate: `04/27/${currentYear}`, time: "00:00:00" },
