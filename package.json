@@ -19,10 +19,17 @@
     "start": "craco start --verbose",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "lint": "biome lint",
+    "lint:fix": "biome lint --write",
+    "format": "biome format",
+    "format:fix": "biome format --write"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "@biomejs/biome": "2.3.0",
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
   },
   "browserslist": {
     "production": [
@@ -31,16 +38,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
       "last 1 firefox version",
+      "last 1 chrome version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.3.0",
-    "@tailwindcss/postcss7-compat": "^2.0.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
   }
 }
