@@ -2,6 +2,7 @@ name: "Close stale issues and PRs"
 on:
   schedule:
     - cron: "45 23 * * *"
+  workflow_dispatch:  # Allows manual trigger for testing
 
 jobs:
   stale:
