@@ -1,7 +1,5 @@
 name: Close stale issues and PRs
 on:
-  push:
-    branches: [ testing-github-actions ]
   schedule:
     - cron: "45 23 * * *"
   workflow_dispatch:
